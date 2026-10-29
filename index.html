@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- NAV BAR -->
+    <nav class="navbar">
+    <div class="top">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-clapperboard"></i>
+            <span>CineFind</span>
+        </a>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search movies...">
+            <button type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </button>
+        </div>
+
+        <a href="#" class="profile-icon" id="profile-btn" aria-label="Profile">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </div>
+
+    <div class="bottom">
+        <a href="#" class="active" id="home-link">Home</a>
+        <a href="#" class="discover" id="discover-link">Discover</a>
+        <a href="#" id="favorites-link">Favorites</a>
+        <a href="#" id="about-link">About</a>
+    </div>
+    </nav>
+
+
+
+    
+<!-- HERO SECTION -->
+<section class="hero" id="hero">
+    <h1>Find Your Next Favorite Movie.</h1>
+
+    <p>
+        Explore movies, discover hidden gems, and find
+        your next movie-night pick — all in one place.
+    </p>
+
+    <button id="hero-explore-btn">Explore Movies</button>
+    <button id="hero-fav-btn">Discover Favorites</button>
+</section>
+
+
+
+
+<!-- MOVIES GRID -->
+    <div class="popular-movies">
+        <div class="row one ">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+
+        </div>
+
+        <div class="row two">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+
+        </div>
+        
+        <div class="row three">
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+            <div class="movie-card"></div>
+
+        </div>
+
+    </div>   
+
+    <!-- PROFILE MODAL -->
+    <div class="profile-modal-overlay" id="profile-modal">
+        <div class="profile-card">
+            <button class="profile-close-btn" id="close-profile-btn" aria-label="Close Profile">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <h3>Movie Explorer</h3>
+                <p class="profile-email">explorer@cinefind.com</p>
+                <span class="profile-badge"><i class="fa-solid fa-crown"></i> CineFind Member</span>
+            </div>
+
+            <div class="profile-stats">
+                <div class="stat-box" id="profile-fav-stat">
+                    <span class="stat-num" id="profile-fav-count">0</span>
+                    <span class="stat-label">Favorites</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">24</span>
+                    <span class="stat-label">Watched</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num">5</span>
+                    <span class="stat-label">Lists</span>
+                </div>
+            </div>
+
+            <div class="profile-menu">
+                <button class="profile-menu-item" id="menu-fav-btn">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>My Favorites</span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+                <button class="profile-menu-item" id="menu-discover-btn">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Discover More</span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+                <button class="profile-menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Account Settings</span>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </button>
+            </div>
+
+            <button class="profile-logout-btn">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Sign Out
+            </button>
+        </div>
+    </div>   
+    <script type="module" src="app.js"></script>
+</body>
+</html>
